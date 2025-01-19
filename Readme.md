@@ -41,6 +41,10 @@ This demo automates the process of creating new products in a web application us
     * Observe the UiPath bot automating the product creation process.
 
 ## Demo
+
+<img width="1331" alt="image" src="https://github.com/user-attachments/assets/684248f8-3e6c-47d6-844d-382e780d2cdc" />
+
+
 - Send Product Creation Request to Flogo API
 <img width="1296" alt="image" src="https://github.com/user-attachments/assets/bc2c029d-3367-490c-9732-615cf8584e3c" />
 
