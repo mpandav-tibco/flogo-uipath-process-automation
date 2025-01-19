@@ -42,7 +42,9 @@ This demo automates the process of creating new products in a web application us
 
 ## Demo
 The video showcasing how RAP takes action on Flogo request. 
-![Demo](/UiPath/rpa_running_job.mp4)
+
+https://github.com/user-attachments/assets/3407cde6-3b29-42d1-893e-adb6bf18172c
+
 
 
 ## Benefits
