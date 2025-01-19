@@ -1,0 +1,99 @@
+{
+    "report": {
+        "suites": [
+            {
+                "suiteName": "Selected Test Cases",
+                "testCases": [
+                    {
+                        "testName": "Tester",
+                        "flowName": "RPA_Orchestrator",
+                        "activities": [
+                            {
+                                "name": "StartActivity"
+                            },
+                            {
+                                "name": "LogDataRequest",
+                                "input": {
+                                    "Log Level": "INFO",
+                                    "flowInfo": false,
+                                    "logLevel": "",
+                                    "message": "###### Request for UiPATH RPA : {\"product\":{\"available\":true,\"price\":99.99,\"productDescription\":\"These shoes are the best!\",\"productId\":\"12345\",\"productName\":\"Awesome Shoes\"}}"
+                                }
+                            },
+                            {
+                                "name": "UiPath_Integration",
+                                "input": {
+                                    "input": {
+                                        "product": {
+                                            "available": true,
+                                            "price": 99.99,
+                                            "productDescription": "These shoes are the best!",
+                                            "productId": "12345",
+                                            "productName": "Awesome Shoes"
+                                        }
+                                    }
+                                },
+                                "output": {
+                                    "code": 200,
+                                    "data": "JOB Triggerred Successfully with {\"correlationId\":\"383842b4-049e-4bde-a541-29be92572788\",\"webhookEventId\":\"wr-c581c5fc61.2d9aa49c-83b4-466e-93ac-65c2a7f6c559-228610-1737320292683\"}"
+                                }
+                            },
+                            {
+                                "name": "ReplyToTrigger",
+                                "input": {
+                                    "reply": {
+                                        "code": 200,
+                                        "message": "Sent Data for Entry..."
+                                    }
+                                },
+                                "output": {
+                                    "code": 200,
+                                    "message": "Sent Data for Entry..."
+                                }
+                            }
+                        ],
+                        "links": [
+                            {
+                                "linkName": "StartActivity to LogMessage",
+                                "from": "StartActivity",
+                                "to": "LogDataRequest"
+                            },
+                            {
+                                "linkName": "LogMessage to StartaSubFlow",
+                                "from": "LogDataRequest",
+                                "to": "UiPath_Integration"
+                            },
+                            {
+                                "linkName": "StartaSubFlow to ReplyToTrigger",
+                                "from": "UiPath_Integration",
+                                "to": "ReplyToTrigger"
+                            }
+                        ],
+                        "errorHandler": {
+                            "activities": []
+                        },
+                        "testResult": {
+                            "totalAssertions": 0,
+                            "executedAssertions": 0,
+                            "failedAssertions": 0,
+                            "skippedAssertions": 0,
+                            "successAssertions": 0,
+                            "flowExecuted": true
+                        },
+                        "testStatus": ""
+                    }
+                ],
+                "suiteResult": {
+                    "totalTests": 1,
+                    "failedTests": 0,
+                    "errorFailed": 0,
+                    "assertionFailed": 0
+                }
+            }
+        ]
+    },
+    "result": {
+        "totalSuites": 1,
+        "failedSuites": 0
+    }
+}
