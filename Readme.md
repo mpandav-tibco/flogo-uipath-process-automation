@@ -42,19 +42,20 @@ This demo automates the process of creating new products in a web application us
 
 ## Demo
 
+### Flogo Application Implenentation
+
 <img width="1331" alt="image" src="https://github.com/user-attachments/assets/684248f8-3e6c-47d6-844d-382e780d2cdc" />
 
-
-- Send Product Creation Request to Flogo API
+### Postman calling Flogo API (Send Product Creation Request)
 <img width="1296" alt="image" src="https://github.com/user-attachments/assets/bc2c029d-3367-490c-9732-615cf8584e3c" />
 
 
-- Flogo Processing the Request and Trigger the UiPath Bot workflow automation
+### Flogo Processing the Request and Trigger the UiPath Bot workflow automation
 <img width="1330" alt="image" src="https://github.com/user-attachments/assets/c795e54d-8cc3-46db-8c68-204288c85ffa" />
 
 
-- The video showcasing how RAP takes action on Flogo request.
-- 
+### The video showcasing how RAP takes action on Flogo request.
+
 https://github.com/user-attachments/assets/3407cde6-3b29-42d1-893e-adb6bf18172c
 
 
