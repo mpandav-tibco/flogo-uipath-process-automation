@@ -34,7 +34,7 @@
       "id": "ReceiveHTTPMessage",
       "handlers": [
         {
-          "description": "",
+          "description": "An Orchestrator flow that Takes Product Request and Push to RPA Bot",
           "settings": {
             "Method": "POST",
             "reqType": "application/json",
@@ -90,7 +90,7 @@
       "id": "flow:RPA_Orchestrator",
       "data": {
         "name": "RPA_Orchestrator",
-        "description": "",
+        "description": "An Orchestrator flow that Takes Product Request and Push to RPA Bot",
         "links": [
           {
             "id": 1,
@@ -257,7 +257,7 @@
       "id": "flow:UIPath_Data_Entry",
       "data": {
         "name": "UIPath_Data_Entry",
-        "description": "",
+        "description": "Trigger RPA Bot for Received Request",
         "links": [
           {
             "id": 1,
@@ -483,6 +483,7 @@
                     }
                   }
                 },
+                "description": "An Orchestrator flow that Takes Product Request and Push to RPA Bot",
                 "consumes": [
                   "application/json"
                 ]
